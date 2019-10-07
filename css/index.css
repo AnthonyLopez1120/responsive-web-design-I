@@ -1,3 +1,383 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.wrapper{
+	padding:2% 24%;
+}
+
+
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+
+nav div{
+	width:100%;
+	
+}
+
+a{	
+	text-decoration: none;
+	color:grey;
+	align-items: center;
+}
+
+.top-section{
+	padding:85px 0;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 75px;
+}
+
+.top-section{
+	display:flex;
+	justify-content: space-evenly;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.innovation{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.button{
+	display: flex;
+	text-align: center;
+	padding: 5px 15px;
+	border:solid black 1px;	
+	width:25%;
+
+}
+
+.topImg{
+    width:100%
+}
+
+.mid-section{
+	display: flex;
+	flex-wrap: wrap;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	padding-top:25px;
+}
+
+.features, .about{
+	width:50%;
+	padding-bottom:15px;
+	justify-content: space-between;
+}
+
+.services, .product, .vision{
+	justify-content: space-between;
+	width: 32%;
+	padding:25px 0;
+}
+
+
+.bottom-section{
+	padding: 25px 0;
+}
+
+.bottom-section p{
+	margin:15px 0;
+}
+
+.copyright{
+	margin:35px 0;
+	text-align: center;
+}
+
+/**********SERVICES PAGE CSS STYLES**************/
+
+.services-header-img{
+	padding-top:15px;
+}
+
+#services-section{
+	margin:25px 0;
+}
+
+#services-section h1{
+	font-size: 35px;
+	text-align: start;
+}
+
+.serv-mid{
+	border-top: black solid 1px;
+	border-bottom: black solid 3px;
+	padding:25px 0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+
+
+.box{
+	background:#f4f3f4;
+	border:solid black 1px;
+	width:45%;
+	margin:25px 0;
+	padding:15px 10px;
+}
+
+.box h2{
+	padding-top:15px;
+}
+
+.learn-button{
+	text-align: center;
+	border:solid black 1px;
+	width:30%;
+	height:15%;
+	margin:25px 0;
+	border-radius: 5px;
+}
+
+.bottom-container{
+	margin: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.some-facts{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.middle-img{
+    width: 100%;
+}
+
+/****************************
+    TABLET STYLES
+*******************************/
+@media (max-width: 800px){
+    /********TABLET NAV BAR******/
+    .wrapper{
+        padding:0 5%;;
+    }
+    .giLogo{
+        order:-1;
+        width:100%;
+        margin:5%;
+        padding-left:35%;
+    }
+.topImg{
+    display:none;
+}
+
+.button{
+    width:50%;
+}
+.button p{
+    text-align: center;
+    margin: 0 auto;
+}
+    
+
+}
+
+/************************************
+        PHONE STYLES
+***********************************/
+
+@media only screen and (max-width:500px){
+
+/****MOBILE NAV BAR*******/
+
+nav{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+a{
+	display: flex;
+	justify-content: center;
+	padding:15px;
+	border: lightgrey 1px solid;
+	/* width: 520px; */
+
+
+
+}
+
+.giLogo{
+   border: none;
+	order:-1;
+	padding-right:150px;
+
+}
+
+.wrapper{
+    padding:0;
+    
+}
+
+/**********HOME PAGE PHONE STYLES*******/
+
+.topImg{
+    display:none;
+}
+
+.button{
+    width:100%;
+   
+}
+.button p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.mid-section{
+    flex-direction: column;
+}
+
+.features, .about, .services, .product, .vision{
+    width:100%;
+    margin:15px 5px;
+}
+
+
+
+
+
+/****MOBILE SERVICE PAGE****/
+
+.serv-mid{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+}
+
+.box{
+	display:flex;
+	width:auto;
+	height:auto;
+	flex-wrap:wrap;
+	margin:15px 0;
+	padding:0;
+	text-align: center;
+	justify-content: center;
+}
+
+.learn-button{
+	width:auto;
+}
+
+.services-header-img{
+	display:none;
+}
+
+
+
+
+#services-section{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.services-info-img{
+	display:none;
+}
+.some-facts{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+}
