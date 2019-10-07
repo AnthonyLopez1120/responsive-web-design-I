@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .wrapper{
-	padding:15px 400px;
+	padding:2% 24%;
 }
 
 
@@ -125,6 +125,10 @@ h1{
 	border:solid black 1px;	
 	width:25%;
 
+}
+
+.topImg{
+    width:100%
 }
 
 .mid-section{
@@ -221,9 +225,66 @@ h1{
 	justify-content: space-between;
 }
 
+.middle-img{
+    width: 100%;
+}
 
-@media only screen and (max-width:800px){
-.serv-mid{
+/*******PHONE STYLES**********/
+
+@media only screen and (max-width:500px){
+*{
+    max-width: 100%;
+}
+/****MOBILE NAV BAR*******/
+
+nav{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+a{
+	display: flex;
+	justify-content: center;
+	padding:15px;
+	border: lightgrey 1px solid;
+	width: 100%;
+}
+.giLogo{
+   border-top: none;
+    order:-1;
+}
+
+/**********HOME PAGE PHONE STYLES*******/
+
+.topImg{
+    display:none;
+}
+
+.button{
+    width:100%;
+   
+}
+.button p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.mid-section{
+    flex-direction: column;
+}
+
+.features, .about, .services, .product, .vision{
+    width:100%;
+    margin:15px 5px;
+}
+
+
+/****MOBILE SERVICE PAGE****/
+
+    .serv-mid{
 	display:flex;
 	flex-direction: column;
 	flex-wrap:wrap;
@@ -249,19 +310,9 @@ h1{
 	padding:0;
 	margin:15px 0;
 }
-nav{
-	display:flex;
-	flex-direction: column-reverse;
-	align-content: center;
-	justify-content: center;
-}
-a{
-	display: flex;
-	justify-content: center;
-	padding:15px;
-	border: lightgrey 1px solid;
-	width: 100%;
-}
+
+
+
 #services-section{
 	display:flex;
 	flex-direction: column;
