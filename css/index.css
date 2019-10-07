@@ -258,19 +258,21 @@ h1{
 
 }
 
-/*******PHONE STYLES**********/
+/************************************
+        PHONE STYLES
+***********************************/
 
 @media only screen and (max-width:500px){
-*{
-    max-width: 100%;
-}
+
 /****MOBILE NAV BAR*******/
 
 nav{
 	display:flex;
 	flex-direction: column;
 	align-content: center;
-	justify-content: center;
+    justify-content: center;
+    width: 100%;
+
 }
 
 a{
@@ -278,11 +280,22 @@ a{
 	justify-content: center;
 	padding:15px;
 	border: lightgrey 1px solid;
-	width: 100%;
+	/* width: 520px; */
+
+
+
 }
+
 .giLogo{
-   border-top: none;
-    order:-1;
+   border: none;
+	order:-1;
+	padding-right:150px;
+
+}
+
+.wrapper{
+    padding:0;
+    
 }
 
 /**********HOME PAGE PHONE STYLES*******/
@@ -316,11 +329,12 @@ a{
 
 /****MOBILE SERVICE PAGE****/
 
-    .serv-mid{
+.serv-mid{
 	display:flex;
 	flex-direction: column;
 	flex-wrap:wrap;
 }
+
 .box{
 	display:flex;
 	width:auto;
@@ -331,6 +345,7 @@ a{
 	text-align: center;
 	justify-content: center;
 }
+
 .learn-button{
 	width:auto;
 }
@@ -338,10 +353,7 @@ a{
 .services-header-img{
 	display:none;
 }
-.wrapper{
-	padding:0;
-	margin:15px 0;
-}
+
 
 
 
@@ -352,6 +364,7 @@ a{
 	align-content: center;
 	text-align: center;
 }
+
 h1{
 	display: flex;
 	justify-content: center;
@@ -366,4 +379,5 @@ h1{
 	align-content: center;
 	text-align: center;
 }
+
 }
