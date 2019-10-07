@@ -229,6 +229,35 @@ h1{
     width: 100%;
 }
 
+/****************************
+    TABLET STYLES
+*******************************/
+@media (max-width: 800px){
+    /********TABLET NAV BAR******/
+    .wrapper{
+        padding:0 5%;;
+    }
+    .giLogo{
+        order:-1;
+        width:100%;
+        margin:5%;
+        padding-left:35%;
+    }
+.topImg{
+    display:none;
+}
+
+.button{
+    width:50%;
+}
+.button p{
+    text-align: center;
+    margin: 0 auto;
+}
+    
+
+}
+
 /*******PHONE STYLES**********/
 
 @media only screen and (max-width:500px){
@@ -280,6 +309,9 @@ a{
     width:100%;
     margin:15px 5px;
 }
+
+
+
 
 
 /****MOBILE SERVICE PAGE****/
